@@ -1,0 +1,60 @@
+I, [2022-12-19T18:13:46.732864 #16984]  INFO -- : Cleared interactions
+I, [2022-12-19T18:13:46.743570 #16984]  INFO -- : Registered expected interaction GET /forecast
+D, [2022-12-19T18:13:46.744544 #16984] DEBUG -- : {
+  "description": "a request to get weather list for news",
+  "providerState": "NewsHour service exists",
+  "request": {
+    "method": "get",
+    "path": "/forecast"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "json_class": "Pact::ArrayLike",
+      "contents": {
+        "date": "2022-12-15",
+        "temperatureC": 30,
+        "temperatureF": 85,
+        "summary": "Hot"
+      },
+      "min": 1
+    }
+  },
+  "metadata": null
+}
+I, [2022-12-19T18:13:46.754338 #16984]  INFO -- : Received request GET /forecast
+D, [2022-12-19T18:13:46.754338 #16984] DEBUG -- : {
+  "path": "/forecast",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:1234",
+    "User-Agent": "python-requests/2.28.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2022-12-19T18:13:46.755281 #16984]  INFO -- : Found matching response for GET /forecast
+D, [2022-12-19T18:13:46.755281 #16984] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "json_class": "Pact::ArrayLike",
+    "contents": {
+      "date": "2022-12-15",
+      "temperatureC": 30,
+      "temperatureF": 85,
+      "summary": "Hot"
+    },
+    "min": 1
+  }
+}
+I, [2022-12-19T18:13:46.765077 #16984]  INFO -- : Verifying - interactions matched
+I, [2022-12-19T18:13:46.775784 #16984]  INFO -- : Writing pact for WeatherService to C:/Users/isyed/pact/python-test/dailynewsservice-weatherservice.json
+I, [2022-12-19T18:13:46.795750 #16984]  INFO -- : Verifying - interactions matched
+I, [2022-12-19T18:13:46.806653 #16984]  INFO -- : Writing pact for WeatherService to C:/Users/isyed/pact/python-test/dailynewsservice-weatherservice.json

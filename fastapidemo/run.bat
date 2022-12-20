@@ -1,0 +1,1 @@
+uvicorn weatherapi:app --reload
